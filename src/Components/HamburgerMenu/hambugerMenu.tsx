@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef, type JSX } from 'react';
 import styles from './styles.module.css';
+import SocialLinks from '../SocialLinks/socialLinks';
 
 function HamburgerMenu(): JSX.Element {
   const [open, setOpen] = useState(false);
@@ -12,9 +13,9 @@ function HamburgerMenu(): JSX.Element {
   useEffect(() => {
     document.body.style.overflow = open ? 'hidden' : '';
   });
-  const onBackdropClick = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (e.target === overlayRef.current) setOpen(false);
-  };
+  // const onBackdropClick = (e: React.MouseEvent<HTMLDivElement>) => {
+  //   if (e.target === overlayRef.current) setOpen(false);
+  // };
   return (
     <>
       <button
@@ -34,8 +35,17 @@ function HamburgerMenu(): JSX.Element {
         ref={overlayRef}
         aria-hidden={!open}
         tabIndex={-1}
-        onClick={onBackdropClick}
+        // onClick={onBackdropClick}
       >
+        <div className={styles.menuAbtMe}>
+          <img
+            src="/src/assets/images/frogiee.jpg"
+            alt="froggie-Img"
+            className={styles.profileImg}
+          />
+          <h3>Hi. I am Subaga. I am a front end developer based in Berlin.</h3>
+          <SocialLinks />
+        </div>
         <nav className={styles.menu}>
           <ul>
             <li>
@@ -55,11 +65,6 @@ function HamburgerMenu(): JSX.Element {
             </li>
           </ul>
         </nav>
-        <div>
-          <img src="../../assets/images/frogiee.jpg" alt="froggie-Img" />
-          <h3>Hi. I am Subaga. I am a front end developer based in Berlin.</h3>
-          <p>Email: subaga.sree@gmail.com</p>
-        </div>
       </div>
     </>
   );

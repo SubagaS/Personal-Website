@@ -4,7 +4,7 @@ function Header() {
   return (
     <>
       <div className={styles.headerSection}>
-        <a href="#">
+        <a href="#" className={styles.headerName}>
           Subaga<span>.</span>
         </a>
         <HamburgerMenu />

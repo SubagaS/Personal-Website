@@ -1,0 +1,29 @@
+.socialLinkContainer {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  button {
+    background-color: transparent;
+    /* border: solid 1px #dedede; */
+    border: none;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover{
+      /* border: solid 1px #a7c957; */
+      cursor: pointer;
+    }
+  }
+  svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    &:hover{
+      path{
+        fill: #a7c957;
+      }
+    }
+  }
+}

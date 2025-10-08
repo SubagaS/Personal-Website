@@ -12,6 +12,11 @@
   border: none;
   cursor: pointer;
   position: relative;
+  &:hover {
+    .line {
+      background-color: #a7c957;
+    }
+  }
 }
 .hamburger .line {
   display: block;
@@ -50,15 +55,34 @@
 .overlay {
   position: fixed;
   inset: 0;
-  /* shorthand for top/right/bottom/left: 0 */
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   background: transparent;
   opacity: 0;
-  pointer-events: none; /* prevent clicks while closed */
-  /* z-index: 1000; */
+  padding: 0 20rem;
+  pointer-events: none;
   transition: opacity var(--transition) ease, background var(--transition) ease;
+}
+
+.menuAbtMe {
+  max-width: 37.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+  h3 {
+    color: #dedede;
+    font-weight: 300;
+    font-size: 2.375rem;
+    width: 100%;
+  }
+}
+
+.profileImg {
+  width: 7.25rem;
+  height: 7.25rem;
+  border-radius: 100%;
+  object-fit: cover;
 }
 
 .open {
@@ -69,13 +93,18 @@
 .menu ul {
   list-style: none;
   text-align: center;
+  
 }
 .menu li {
-  margin: 14px 0;
+  margin: 2rem 0;
 }
 .menu a {
   display: inline-block;
   text-decoration: none;
   color: #dedede;
+  font-size: 3.75rem;
   transition: transform var(--transition) ease;
+  &:hover{
+    color: #a7c957;
+  }
 }
