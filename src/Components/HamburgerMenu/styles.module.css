@@ -1,0 +1,81 @@
+:root {
+  --transition: 300ms;
+}
+
+.hamburger {
+  width: 1.8rem;
+  height: 1.8rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+.hamburger .line {
+  display: block;
+  width: 1.8rem;
+  height: 0.18rem;
+  background: #dedede;
+  border-radius: 2px;
+  position: absolute;
+  transition: transform var(--transition) ease, opacity var(--transition) ease,
+    background var(--transition) ease;
+}
+.line:nth-child(1) {
+  transform: translateY(-8px);
+}
+.line:nth-child(2) {
+  transform: translateY(0);
+}
+.line:nth-child(3) {
+  transform: translateY(8px);
+}
+.isOpen .line {
+  background: #dedede;
+}
+.isOpen .line:nth-child(1) {
+  transform: translateY(0) rotate(45deg);
+  z-index: 2;
+}
+.isOpen .line:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+.isOpen .line:nth-child(3) {
+  transform: translateY(0) rotate(-45deg);
+  z-index: 2;
+}
+.overlay {
+  position: fixed;
+  inset: 0;
+  /* shorthand for top/right/bottom/left: 0 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  opacity: 0;
+  pointer-events: none; /* prevent clicks while closed */
+  /* z-index: 1000; */
+  transition: opacity var(--transition) ease, background var(--transition) ease;
+}
+
+.open {
+  background: #0a0a0a;
+  opacity: 1;
+  pointer-events: auto;
+}
+.menu ul {
+  list-style: none;
+  text-align: center;
+}
+.menu li {
+  margin: 14px 0;
+}
+.menu a {
+  display: inline-block;
+  text-decoration: none;
+  color: #dedede;
+  transition: transform var(--transition) ease;
+}
