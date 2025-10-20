@@ -40,5 +40,12 @@ describe('Social links', () => {
 
     const githubAnchor = githubBtn.closest('a');
     expect(githubAnchor).toHaveAttribute('href', 'https://github.com/SubagaS');
+    const linkedAnchor = linkedinBtn.closest('a');
+    expect(linkedAnchor).toHaveAttribute(
+      'href',
+      'https://www.linkedin.com/in/subaga/'
+    );
+    const emailAnchor = emailBtn.closest('a');
+    expect(emailAnchor).toHaveAttribute('href', 'mailto:subaga.sree@gmail.com');
   });
 });
