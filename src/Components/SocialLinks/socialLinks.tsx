@@ -4,8 +4,12 @@ function SocialLinks() {
   return (
     <>
       <div className={styles.socialLinkContainer}>
-        <a href="https://github.com/SubagaS" target="_blank">
-          <button>
+        <a
+          href="https://github.com/SubagaS"
+          target="_blank"
+          data-testid="linkGithub"
+        >
+          <button data-testid="githubBtn">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
               <path
                 fill="#dedede"
@@ -15,8 +19,12 @@ function SocialLinks() {
           </button>
         </a>
 
-        <a href="https://www.linkedin.com/in/subaga/" target="_blank">
-          <button>
+        <a
+          href="https://www.linkedin.com/in/subaga/"
+          target="_blank"
+          data-testid="linkLinkedin"
+        >
+          <button data-testid="linkedinBtn">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
               <path
                 fill="#dedede"
@@ -26,8 +34,12 @@ function SocialLinks() {
           </button>
         </a>
 
-        <a href="mailto:subaga.sree@gmail.com" target="_blank">
-          <button>
+        <a
+          href="mailto:subaga.sree@gmail.com"
+          target="_blank"
+          data-testid="linkEmail"
+        >
+          <button data-testid="emailBtn">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
               <path
                 fill="#dedede"
