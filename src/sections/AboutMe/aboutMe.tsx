@@ -1,6 +1,6 @@
 import styles from './styles.module.css';
 import SocialLinks from '../../Components/SocialLinks/socialLinks';
-import HorizontalRule from '../../Components/HorizontalRule/horizontalRUle';
+import HorizontalRule from '../../Components/HorizontalRule/horizontalRule';
 
 function AboutMe() {
   return (

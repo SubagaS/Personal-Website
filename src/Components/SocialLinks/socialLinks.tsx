@@ -1,4 +1,3 @@
-import type React from 'react';
 import styles from './styles.module.css';
 
 type SocialLinksProps = {
@@ -8,16 +7,13 @@ type SocialLinksProps = {
 function SocialLinks({ width, height }: SocialLinksProps) {
   return (
     <>
-      <div className={styles.socialLinkContainer} >
-        <a href="https://github.com/SubagaS" target="_blank">
-          <button style={{ width, height }}>
       <div className={styles.socialLinkContainer}>
         <a
           href="https://github.com/SubagaS"
           target="_blank"
           data-testid="linkGithub"
         >
-          <button data-testid="githubBtn">
+          <button data-testid="githubBtn" style={{ width, height }}>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
               <path
                 fill="#dedede"
@@ -27,14 +23,12 @@ function SocialLinks({ width, height }: SocialLinksProps) {
           </button>
         </a>
 
-        <a href="https://www.linkedin.com/in/subaga/" target="_blank">
-          <button style={{ width, height }}>
         <a
           href="https://www.linkedin.com/in/subaga/"
           target="_blank"
           data-testid="linkLinkedin"
         >
-          <button data-testid="linkedinBtn">
+          <button data-testid="linkedinBtn" style={{ width, height }}>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
               <path
                 fill="#dedede"
@@ -44,14 +38,12 @@ function SocialLinks({ width, height }: SocialLinksProps) {
           </button>
         </a>
 
-        <a href="mailto:subaga.sree@gmail.com" target="_blank">
-          <button style={{ width, height }}>
         <a
           href="mailto:subaga.sree@gmail.com"
           target="_blank"
           data-testid="linkEmail"
         >
-          <button data-testid="emailBtn">
+          <button data-testid="emailBtn" style={{ width, height }}>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
               <path
                 fill="#dedede"
