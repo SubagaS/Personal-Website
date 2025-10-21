@@ -3,15 +3,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 2rem;
   .headerName {
     text-decoration: none;
-    color: #dedede;
+    color: var(--white);
     font-size: 2rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     &:hover {
-      color: #a7c957;
+      color: var(--green);
       cursor: pointer;
       span {
         color: #dedede;
@@ -20,7 +21,7 @@
     span {
       font-size: 3rem;
       font-weight: 900;
-      color: #a7c957;
+      color: var(--green);
     }
   }
 }

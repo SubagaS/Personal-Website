@@ -1,8 +1,16 @@
+import type React from 'react';
 import styles from './styles.module.css';
 
-function SocialLinks() {
+type SocialLinksProps = {
+  width?: string;
+  height?: string;
+};
+function SocialLinks({ width, height }: SocialLinksProps) {
   return (
     <>
+      <div className={styles.socialLinkContainer} >
+        <a href="https://github.com/SubagaS" target="_blank">
+          <button style={{ width, height }}>
       <div className={styles.socialLinkContainer}>
         <a
           href="https://github.com/SubagaS"
@@ -19,6 +27,8 @@ function SocialLinks() {
           </button>
         </a>
 
+        <a href="https://www.linkedin.com/in/subaga/" target="_blank">
+          <button style={{ width, height }}>
         <a
           href="https://www.linkedin.com/in/subaga/"
           target="_blank"
@@ -34,6 +44,8 @@ function SocialLinks() {
           </button>
         </a>
 
+        <a href="mailto:subaga.sree@gmail.com" target="_blank">
+          <button style={{ width, height }}>
         <a
           href="mailto:subaga.sree@gmail.com"
           target="_blank"
