@@ -14,7 +14,7 @@
   position: relative;
   &:hover {
     .line {
-      background-color: #a7c957;
+      background-color: var(--green);
     }
   }
 }
@@ -22,7 +22,7 @@
   display: block;
   width: 1.8rem;
   height: 0.18rem;
-  background: #dedede;
+  background: var(--white);
   border-radius: 2px;
   position: absolute;
   transition: transform var(--transition) ease, opacity var(--transition) ease,
@@ -38,7 +38,7 @@
   transform: translateY(8px);
 }
 .isOpen .line {
-  background: #dedede;
+  background: var(--white);
 }
 .isOpen .line:nth-child(1) {
   transform: translateY(0) rotate(45deg);
@@ -71,7 +71,7 @@
   flex-direction: column;
   gap: 1.875rem;
   h3 {
-    color: #dedede;
+    color: var(--white);
     font-weight: 300;
     font-size: 2.375rem;
     width: 100%;
@@ -86,14 +86,13 @@
 }
 
 .open {
-  background: #0a0a0a;
+  background: var(--black);
   opacity: 1;
   pointer-events: auto;
 }
 .menu ul {
   list-style: none;
   text-align: center;
-  
 }
 .menu li {
   margin: 2rem 0;
@@ -101,10 +100,10 @@
 .menu a {
   display: inline-block;
   text-decoration: none;
-  color: #dedede;
+  color: var(--white);
   font-size: 3.75rem;
   transition: transform var(--transition) ease;
-  &:hover{
-    color: #a7c957;
+  &:hover {
+    color: var(--green);
   }
 }

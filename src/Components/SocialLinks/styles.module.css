@@ -22,7 +22,7 @@
     height: 2.5rem;
     &:hover{
       path{
-        fill: #a7c957;
+        fill: var(--green);
       }
     }
   }

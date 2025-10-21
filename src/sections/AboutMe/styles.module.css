@@ -1,0 +1,14 @@
+.aboutMeContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  .aboutMeTitle {
+    color: var(--lightGrey);
+    font-weight: 400;
+  }
+}
+.aboutMePara {
+ width: 80rem;
+font-size: 2.3rem;
+}

@@ -9,6 +9,9 @@
 }
 :root {
   --black: #0a0a0a;
+  --white: #dedede;
+  --green: #a7c957;
+  --lightGrey: #a9a9a9;
 }
 html,
 body {
@@ -16,6 +19,7 @@ body {
   height: 100%;
   font-size: 16px;
   font-family: Urbanist;
+  color: var(--white);
 }
 body {
   background-color: var(--black);
