@@ -7,6 +7,7 @@ function App() {
     <>
       <div className="pageWrapper">
         <Header />
+        
         <AboutMe />
       </div>
     </>

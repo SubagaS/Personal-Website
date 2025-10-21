@@ -12,10 +12,11 @@
   --white: #dedede;
   --green: #a7c957;
   --lightGrey: #a9a9a9;
+  --darkGrey: #484e53;
 }
 html,
 body {
-  width: 100%;
+  max-width: 100vh;
   height: 100%;
   font-size: 16px;
   font-family: Urbanist;
