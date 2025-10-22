@@ -1,0 +1,16 @@
+.projectTitle{
+    margin: 1rem 0;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--lightGrey);
+}
+.aboutProject{
+    margin-bottom: 1.5rem;
+}
+
+.cardContainer{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 2rem;
+}

@@ -3,7 +3,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2rem;
+  padding: 2rem 0;
+  position: fixed;
+  background-color: var(--black);
+  z-index: 1;
   .headerName {
     text-decoration: none;
     color: var(--white);
