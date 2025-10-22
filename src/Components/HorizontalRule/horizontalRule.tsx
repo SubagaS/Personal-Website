@@ -1,8 +1,9 @@
 import styles from './styles.module.css';
+
 function HorizontalRule() {
   return (
     <>
-      <hr className={styles.hrTag}/>
+      <hr className={styles.hrTag} />
     </>
   );
 }

@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 1.75rem;
+  margin-top: 10rem;
   margin-bottom: 1rem;
   .aboutMeTitle {
     color: var(--lightGrey);

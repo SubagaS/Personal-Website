@@ -5,7 +5,7 @@ import HorizontalRule from '../../Components/HorizontalRule/horizontalRule';
 function AboutMe() {
   return (
     <>
-     <HorizontalRule />
+      <HorizontalRule />
       <div className={styles.aboutMeContainer}>
         <h3 className={styles.aboutMeTitle}>About Me</h3>
         <div className={styles.socialLinksContainer}>
