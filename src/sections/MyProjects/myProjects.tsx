@@ -39,6 +39,13 @@ function MyProjects() {
           stackUsed="Typescript | React | CSS | Vite"
         />
       </div>
+      <div className={styles.exploreBtn}>
+        <a href="">
+          <button className={styles.moreProjectsBtn}>
+            Explore more projects
+          </button>
+        </a>
+      </div>
     </>
   );
 }
