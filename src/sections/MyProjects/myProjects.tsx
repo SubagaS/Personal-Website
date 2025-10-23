@@ -1,5 +1,6 @@
 import styles from './styles.module.css';
 import Card from '../../Components/Card/cardProject';
+import HorizontalRule from '../../Components/HorizontalRule/horizontalRule';
 
 function MyProjects() {
   return (
@@ -46,6 +47,7 @@ function MyProjects() {
           </button>
         </a>
       </div>
+      <HorizontalRule />
     </>
   );
 }
