@@ -10,8 +10,8 @@ function App() {
       <div className="pageWrapper">
         <Header />
         <AboutMe />
-        <MySkills />
         <MyProjects />
+        <MySkills />
       </div>
     </>
   );
