@@ -43,3 +43,12 @@
     font-size: 0.9rem;
   }
 }
+.skillIconContainer {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.skillIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+}

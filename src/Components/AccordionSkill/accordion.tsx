@@ -4,8 +4,9 @@ import HorizontalRule from '../HorizontalRule/horizontalRule';
 type AccordionProps = {
   title: string;
   content: string;
+  skillIconSrc: string[];
 };
-function AccordionItem({ title, content }: AccordionProps) {
+function AccordionItem({ title, content, skillIconSrc }: AccordionProps) {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
@@ -35,6 +36,11 @@ function AccordionItem({ title, content }: AccordionProps) {
 
         {isOpen && (
           <div className={styles.accordionContent}>
+            <div className={styles.skillIconContainer}>
+              {skillIconSrc.map((src, index) => (
+                <img key={index} src={src} className={styles.skillIcon} />
+              ))}
+            </div>
             <p>{content}</p>
           </div>
         )}
@@ -59,11 +65,20 @@ function AccordionSkill() {
       title: 'UI/UX Design',
       content:
         'UI/UX design to me is to make a product feel human.My process begins with understanding the users story and ends with crafting intuitive, beautiful interfaces that make their journey effortless.',
+      skillIconSrc: ['/src/assets/images/Figma-logo.svg'],
     },
     {
       title: 'Frontend Developement',
       content:
         'As a frontend developer, I obsess over clean code and the small moments of delight that make a product feel alive. I see development as an extension of design-a creative craft that bridges logic and aesthetics to build digital experiences that are both meaningful and memorable.',
+      skillIconSrc: [
+        '/src/assets/images/HTML-icon.png',
+        '/src/assets/images/css-icon.png',
+        '/src/assets/images/JS-icon.png',
+        '/src/assets/images/Typescript_logo_2020.svg.png',
+        '/src/assets/images/React-icon.svg.png',
+        '/src/assets/images/github-icon.png',
+      ],
     },
   ];
   return (
