@@ -1,0 +1,54 @@
+.accordion {
+  max-height: 500px;
+}
+.accordionItem {
+  margin: 1rem 0;
+  /* min-height: 125px; */
+}
+
+.accTitleContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: inherit;
+  &:hover {
+    cursor: pointer;
+    .accTitleName {
+      color: var(--green);
+      cursor: pointer;
+    }
+  }
+}
+.accTitleName {
+  color: var(--white);
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.accOpenBtn {
+  background-color: transparent;
+  border: none;
+  .addBtn {
+    width: 1rem;
+    height: 1rem;
+  }
+  .minusBtn {
+    width: 1.1rem;
+    height: 0.1rem;
+  }
+}
+.accordionContent {
+  margin-top: 1rem;
+  p {
+    font-size: 0.9rem;
+  }
+}
+.skillIconContainer {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.skillIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+}

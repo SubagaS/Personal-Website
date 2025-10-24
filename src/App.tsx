@@ -2,6 +2,7 @@ import './App.css';
 import Header from './sections/Header/header';
 import AboutMe from './sections/AboutMe/aboutMe';
 import MyProjects from './sections/MyProjects/myProjects';
+import MySkills from './sections/MySkills/mySkills';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Header />
         <AboutMe />
         <MyProjects />
+        <MySkills />
       </div>
     </>
   );
