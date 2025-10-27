@@ -1,0 +1,56 @@
+.contactMeSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  h2 {
+    font-weight: 400;
+    font-size: 1.8rem;
+  }
+}
+.linkBtnContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  a {
+    text-decoration: none;
+  }
+}
+.contactLinkBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  background-color: var(--black);
+  border: solid 1px var(--white);
+  border-radius: 0.3rem;
+  color: var(--white);
+  width: 8rem;
+  height: 2rem;
+  font-family: inherit;
+  svg {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--green);
+    color: var(--black);
+    border: none;
+    svg {
+      path {
+        fill: var(--black);
+      }
+    }
+  }
+}
+.linksFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  p{
+    font-size: 0.75rem;
+  }
+}

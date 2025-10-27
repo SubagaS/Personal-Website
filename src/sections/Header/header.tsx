@@ -4,12 +4,12 @@ function Header() {
   return (
     <>
     
-      <div className={styles.headerSection}>
+      <header className={styles.headerSection}>
         <a href="#" className={styles.headerName}>
           Subaga<span>.</span>
         </a>
         <HamburgerMenu />
-      </div>
+      </header>
      
     </>
   );

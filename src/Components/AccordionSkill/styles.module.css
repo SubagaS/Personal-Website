@@ -1,5 +1,6 @@
 .accordion {
   max-height: 500px;
+  margin-bottom: 1.5rem;
 }
 .accordionItem {
   margin: 1rem 0;

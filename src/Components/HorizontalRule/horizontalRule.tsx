@@ -1,9 +1,12 @@
 import styles from './styles.module.css';
+type hrProps = {
+  width?: string;
+};
 
-function HorizontalRule() {
+function HorizontalRule({ width }: hrProps) {
   return (
     <>
-      <hr className={styles.hrTag} />
+      <hr className={styles.hrTag} style={{ width }} />
     </>
   );
 }
