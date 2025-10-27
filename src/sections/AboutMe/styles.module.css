@@ -11,5 +11,38 @@
 }
 .aboutMePara {
   font-size: 1.1rem;
-  margin-bottom: 1.75rem;
+  margin-bottom: 1rem;
+}
+a {
+  text-decoration: none;
+}
+.resumeBtn {
+  background-color: var(--black);
+  border: solid 0.5px var(--lightGrey);
+  border-radius: 0.4rem;
+  font-family: inherit;
+  font-weight: 500;
+  color: var(--white);
+  padding: 0.4rem;
+  width: 6rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.1rem;
+  svg {
+    width: 1rem;
+    height: 1rem;
+  }
+  &:hover {
+    cursor: pointer;
+    background-color: var(--green);
+    color: var(--black);
+    border: none;
+    svg {
+      path {
+        fill: var(--black);
+      }
+    }
+  }
 }
