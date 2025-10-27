@@ -45,3 +45,12 @@
     }
   }
 }
+.linksFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  p{
+    font-size: 0.75rem;
+  }
+}

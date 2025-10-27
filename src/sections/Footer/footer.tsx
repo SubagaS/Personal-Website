@@ -1,5 +1,6 @@
 import styles from './styles.module.css';
 import HorizontalRule from '../../Components/HorizontalRule/horizontalRule';
+import SocialLinks from '../../Components/SocialLinks/socialLinks';
 function Footer() {
   return (
     <>
@@ -33,6 +34,10 @@ function Footer() {
           </div>
         </div>
         <HorizontalRule />
+        <div className={styles.linksFooter}>
+          <p>&copy; 2025 all rights reserved</p>
+          <SocialLinks width="1.5rem" height="1.5rem" />
+        </div>
       </footer>
     </>
   );
