@@ -1,21 +1,16 @@
-import { useState, useEffect, useRef, type JSX } from 'react';
+import { useState, useEffect, type JSX } from 'react';
 import styles from './styles.module.css';
 import SocialLinks from '../SocialLinks/socialLinks';
 
 function HamburgerMenu(): JSX.Element {
   const [open, setOpen] = useState(false);
-  const overlayRef = useRef<HTMLDivElement | null>(null);
   const toggle = () => {
     setOpen((f) => !f);
-    console.log(open);
-    console.log('It is open');
   };
   useEffect(() => {
     document.body.style.overflow = open ? 'hidden' : '';
   });
-  // const onBackdropClick = (e: React.MouseEvent<HTMLDivElement>) => {
-  //   if (e.target === overlayRef.current) setOpen(false);
-  // };
+
   return (
     <>
       <div className={styles.hamburgerContainer}>
@@ -33,10 +28,8 @@ function HamburgerMenu(): JSX.Element {
         <div
           className={`${styles.overlay} ${open ? styles.open : ''}`}
           role="dialog"
-          ref={overlayRef}
           aria-hidden={!open}
           tabIndex={-1}
-          // onClick={onBackdropClick}
         >
           <div className={styles.menuAbtMe}>
             <img
