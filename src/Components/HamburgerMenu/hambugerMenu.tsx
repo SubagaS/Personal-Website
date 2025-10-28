@@ -1,6 +1,7 @@
 import { useState, useEffect, type JSX } from 'react';
 import styles from './styles.module.css';
 import SocialLinks from '../SocialLinks/socialLinks';
+import { Link } from 'react-router-dom';
 
 function HamburgerMenu(): JSX.Element {
   const [open, setOpen] = useState(false);
@@ -45,14 +46,14 @@ function HamburgerMenu(): JSX.Element {
           <nav className={styles.menu}>
             <ul>
               <li>
-                <a href="#" onClick={() => setOpen(false)}>
+                <Link to="/" onClick={() => setOpen(false)}>
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" onClick={() => setOpen(false)}>
+                <Link to="/Projects" onClick={() => setOpen(false)}>
                   Projects
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="#" onClick={() => setOpen(false)}>

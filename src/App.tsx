@@ -1,20 +1,17 @@
 import './App.css';
-import Header from './sections/Header/header';
-import AboutMe from './sections/AboutMe/aboutMe';
-import MyProjects from './sections/MyProjects/myProjects';
-import MySkills from './sections/MySkills/mySkills';
-import Footer from './sections/Footer/footer';
+import Home from './Pages/Home/Home';
+import Projects from './Pages/Projects/Projects';
+
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <>
-      <div className="pageWrapper">
-        <Header />
-        <AboutMe />
-        <MyProjects />
-        <MySkills />
-        <Footer />
-      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Projects" element={<Projects />} />
+
+      </Routes>
     </>
   );
 }

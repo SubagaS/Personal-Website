@@ -1,8 +1,13 @@
 import styles from './styles.module.css';
 import Card from '../../Components/Card/cardProject';
 import HorizontalRule from '../../Components/HorizontalRule/horizontalRule';
+import { useNavigate } from 'react-router-dom';
 
 function MyProjects() {
+  const navigate = useNavigate();
+  function handleSubmit() {
+    navigate('/Projects');
+  }
   return (
     <>
       <h3 className={styles.projectTitle}>Projects</h3>
@@ -41,11 +46,9 @@ function MyProjects() {
         />
       </div>
       <div className={styles.exploreBtn}>
-        <a href="">
-          <button className={styles.moreProjectsBtn}>
-            Explore more projects
-          </button>
-        </a>
+        <button className={styles.moreProjectsBtn} onClick={handleSubmit}>
+          Explore more projects
+        </button>
       </div>
       <HorizontalRule />
     </>
