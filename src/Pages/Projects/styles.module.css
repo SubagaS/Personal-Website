@@ -4,3 +4,9 @@
     margin-bottom: 1rem;
   }
 }
+.projectContainer {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: auto;
+  gap: 1rem;
+}
