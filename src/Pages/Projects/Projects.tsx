@@ -1,4 +1,5 @@
 import Header from '../../sections/Header/header';
+import Footer from '../../sections/Footer/footer';
 import HorizontalRule from '../../Components/HorizontalRule/horizontalRule';
 import Card from '../../Components/Card/cardProject';
 import styles from './styles.module.css';
@@ -8,7 +9,9 @@ function Projects() {
     <>
       <Header />
       <main className={styles.mainProjectContainer}>
-        <h2>Showcasing my talent and Passion</h2>
+        <h2 className={styles.projectIntro}>
+          Showcasing my <span>talent</span> and <span>passion</span>
+        </h2>
         <HorizontalRule />
         <div className={styles.projectContainer}>
           <Card
@@ -37,14 +40,14 @@ function Projects() {
             siteLink="https://subagas.github.io/Frontend-mentor/Newbie/interactive-rating-component/"
             codeLink="https://github.com/SubagaS/Interactive-rating-component"
             projectTitle="Interactive Rating Component"
-            stackUsed="Typescript | React | CSS | Vite"
+            stackUsed="HTML | CSS | Javascript"
           />
           <Card
             thumbnailSrc="/src/assets/images/FAQ-accordion-component.jpg"
             siteLink="https://subagas.github.io/Frontend-mentor/Newbie/faq-accordion/"
             codeLink="https://github.com/SubagaS/FAQ-accordion"
             projectTitle="FAQ Accordion"
-            stackUsed="Typescript | React | CSS | Vite"
+            stackUsed="HTML | CSS | Javascript"
           />
           <Card
             thumbnailSrc="/src/assets/images/Recipe-page-thumbnail.jpg"
@@ -53,7 +56,16 @@ function Projects() {
             projectTitle="Recipe Page"
             stackUsed="HTML | CSS"
           />
+          <a
+            href="https://www.frontendmentor.io/profile/SubagaS"
+            className={styles.moreProjects}
+            target="_blank"
+          >
+            <button className={styles.moreProjectsBtn}>More Projects</button>
+          </a>
+          <HorizontalRule />
         </div>
+        <Footer />
       </main>
     </>
   );
