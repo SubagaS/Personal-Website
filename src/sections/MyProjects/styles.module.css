@@ -1,8 +1,6 @@
 .projectTitle {
   margin: 1rem 0;
-  text-transform: uppercase;
-  font-size: 1.1rem;
-  font-weight: 600;
+  font-weight: 400;
   color: var(--lightGrey);
 }
 .aboutProject {

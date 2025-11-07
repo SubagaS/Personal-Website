@@ -6,6 +6,7 @@
   h2 {
     font-weight: 400;
     font-size: 1.8rem;
+    color: var(--white);
   }
 }
 .linkBtnContainer {
@@ -50,7 +51,7 @@
   align-items: center;
   justify-content: space-between;
   margin-top: 1rem;
-  p{
+  p {
     font-size: 0.75rem;
   }
 }

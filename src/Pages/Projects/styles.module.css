@@ -1,1 +1,33 @@
-
+.mainProjectContainer {
+  padding-top: 9rem;
+  .projectIntro {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--lightGrey);
+    span {
+      color: var(--white);
+    }
+  }
+}
+.projectContainer {
+  margin: 2rem 0 1rem 0;
+  display: grid;
+  grid-template-columns: auto;
+  gap: 1rem;
+}
+.moreProjects{
+  display:flex;
+  justify-content: center;
+  margin: 0.8rem 0;
+}
+.moreProjectsBtn{
+  width: 10rem;
+  height: 2rem;
+  font-family: inherit;
+  font-size: 0.9rem;
+  background-color: #141414;
+  border: 1px solid var(--darkGrey);
+  border-radius: 0.5rem;
+  color: var(--white);
+}
