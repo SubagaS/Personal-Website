@@ -56,9 +56,9 @@ function HamburgerMenu(): JSX.Element {
                 </Link>
               </li>
               <li>
-                <a href="#" onClick={() => setOpen(false)}>
+                <Link to="/Design" onClick={() => setOpen(false)}>
                   Design & Art
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>

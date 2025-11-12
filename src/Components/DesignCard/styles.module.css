@@ -1,0 +1,51 @@
+.designImg {
+  width: 100%;
+  height: 16rem;
+  object-fit:cover;
+  margin-bottom: 0.5rem;
+
+  &:hover {
+    transform: scale(1.04);
+    cursor: pointer;
+  }
+}
+.designImgContainer {
+  position: relative;
+}
+.designTitleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.designTitle {
+  font-size: 1.2rem;
+}
+.designProjectBtn {
+  background-color: var(--black);
+  border: solid 1px var(--darkGrey);
+  border-radius: 1.4rem;
+  color: var(--lightGrey);
+  font-size: 0.875rem;
+  font-family: inherit;
+  width: 6.5rem;
+  height: 2rem;
+
+  &:hover {
+    background-color: var(--green);
+    color: var(--black);
+    border: none;
+    cursor: pointer;
+  }
+}
+.designSkills {
+  background-color: var(--black);
+  border-radius: 0.5rem;
+  position: absolute;
+  bottom: 1.5rem;
+  right: 0.5rem;
+  p {
+    font-size: 0.7rem;
+    padding: 0.5rem;
+    color: var(--white);
+  }
+}
