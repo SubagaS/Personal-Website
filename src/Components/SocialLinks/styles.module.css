@@ -7,21 +7,21 @@
     /* border: solid 1px #dedede; */
     border: none;
     border-radius: 50%;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: clamp(2.5rem, 2vw, 5rem);
+    height: clamp(2.5rem, 2vw, 5rem);
     display: flex;
     align-items: center;
     justify-content: center;
-    &:hover{
+    &:hover {
       /* border: solid 1px #a7c957; */
       cursor: pointer;
     }
   }
   svg {
-    width: 2.5rem;
-    height: 2.5rem;
-    &:hover{
-      path{
+    width: clamp(2.5rem, 5rem, 10rem);
+    height: clamp(2.5rem, 5rem, 10rem);
+    &:hover {
+      path {
         fill: var(--green);
       }
     }

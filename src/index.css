@@ -16,7 +16,7 @@
 }
 html,
 body {
-  width: 100%;
+  width: 100vw;
   min-height: 100%;
   font-size: 16px;
   font-family: Urbanist;
@@ -25,6 +25,9 @@ body {
 html {
   scrollbar-gutter: stable;
 }
+#root {
+  width: 100%;
+}
 ul,
 ol {
   padding: 0;
@@ -32,6 +35,5 @@ ol {
 }
 body {
   background-color: var(--black);
-
   padding: 0 2.5rem 3.125rem 2.5rem;
 }

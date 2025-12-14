@@ -4,6 +4,8 @@
 .hamburgerContainer {
   position: fixed;
   right: 2.5rem;
+  width: 1.8rem;
+  height: 1.8rem;
   /* z-index: 1; */
 }
 .hamburger {
@@ -65,27 +67,32 @@
   background: transparent;
   opacity: 0;
   padding: 0 2rem;
-  /* padding: 0 20rem; */
   pointer-events: none;
   transition: opacity var(--transition) ease, background var(--transition) ease;
+  @media only screen and (min-width: 800px) {
+    padding: 0 clamp(4rem, 5vw, 18rem);
+    flex-direction: row;
+    align-items: center;
+    gap: clamp(5rem, 10vw, 10rem);
+  }
 }
 
 .menuAbtMe {
-  max-width: 37.75rem;
+  max-width: clamp(20rem, 10vw, 37.75rem);
   display: flex;
   flex-direction: column;
   gap: 1.4rem;
   h3 {
     color: var(--white);
     font-weight: 300;
-    font-size: 1.4rem;
+    font-size: clamp(1.4rem, 2vw, 2rem);
     width: 100%;
   }
 }
 
 .profileImg {
-  width: 7.25rem;
-  height: 7.25rem;
+  width: clamp(7.25rem, 10vw, 10rem);
+  height: clamp(7.25rem, 10vw, 10rem);
   border-radius: 100%;
   object-fit: cover;
 }
@@ -102,13 +109,13 @@
   text-align: left;
 }
 .menu li {
-  margin: 1.5rem 0;
+  margin: clamp(1.5rem, 2vw, 3rem) 0;
 }
 .menu a {
   display: inline-block;
   text-decoration: none;
   color: var(--white);
-  font-size: 1.7rem;
+  font-size: clamp(1.7rem, 5vw, 3rem);
   font-weight: 500;
   text-transform: uppercase;
   transition: transform var(--transition) ease;

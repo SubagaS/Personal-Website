@@ -1,3 +1,7 @@
+.footerSection {
+  margin-top: clamp(1rem, 3vw, 5rem);
+}
+
 .contactMeSection {
   display: flex;
   justify-content: space-between;
@@ -5,7 +9,7 @@
   margin-bottom: 1.5rem;
   h2 {
     font-weight: 400;
-    font-size: 1.8rem;
+    font-size: clamp(1.8rem, 2vw, 2.2rem);
     color: var(--white);
   }
 }
@@ -13,8 +17,12 @@
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+  /* width: 50rem; */
   a {
     text-decoration: none;
+  }
+  @media only screen and (min-width: 800px) {
+    flex-direction: row;
   }
 }
 .contactLinkBtn {
@@ -26,12 +34,13 @@
   border: solid 1px var(--white);
   border-radius: 0.3rem;
   color: var(--white);
-  width: 8rem;
-  height: 2rem;
+  width: clamp(8rem, 25vw, 11rem);
+  height: clamp(2rem, 5vw, 2.5rem);
   font-family: inherit;
+  font-size: clamp(1rem, 2vw, 1.1rem);
   svg {
-    width: 1.2rem;
-    height: 1.2rem;
+    width: clamp(1.2rem, 5vw, 1.5rem);
+    height: clamp(1.2rem, 5vw, 1.5rem);
   }
 
   &:hover {
@@ -52,6 +61,6 @@
   justify-content: space-between;
   margin-top: 1rem;
   p {
-    font-size: 0.75rem;
+    font-size: clamp(0.75rem, 2vw, 1rem);
   }
 }

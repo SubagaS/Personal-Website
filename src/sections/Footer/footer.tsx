@@ -4,7 +4,7 @@ import SocialLinks from '../../Components/SocialLinks/socialLinks';
 function Footer() {
   return (
     <>
-      <footer>
+      <footer className={styles.footerSection}>
         <div className={styles.contactMeSection}>
           <h2>Feel Free To Reach Out</h2>
           <div className={styles.linkBtnContainer}>
@@ -37,7 +37,10 @@ function Footer() {
             >
               <button className={styles.contactLinkBtn}>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                  <path fill="#dedede" d="M192 64C156.7 64 128 92.7 128 128L128 512C128 547.3 156.7 576 192 576L448 576C483.3 576 512 547.3 512 512L512 234.5C512 217.5 505.3 201.2 493.3 189.2L386.7 82.7C374.7 70.7 358.5 64 341.5 64L192 64zM453.5 240L360 240C346.7 240 336 229.3 336 216L336 122.5L453.5 240z" />
+                  <path
+                    fill="#dedede"
+                    d="M192 64C156.7 64 128 92.7 128 128L128 512C128 547.3 156.7 576 192 576L448 576C483.3 576 512 547.3 512 512L512 234.5C512 217.5 505.3 201.2 493.3 189.2L386.7 82.7C374.7 70.7 358.5 64 341.5 64L192 64zM453.5 240L360 240C346.7 240 336 229.3 336 216L336 122.5L453.5 240z"
+                  />
                 </svg>
                 Resume
               </button>
@@ -47,7 +50,7 @@ function Footer() {
         <HorizontalRule />
         <div className={styles.linksFooter}>
           <p>&copy; 2025 all rights reserved</p>
-          <SocialLinks width="1.5rem" height="1.5rem" />
+          <SocialLinks width="1.7rem" height="1.7rem" />
         </div>
       </footer>
     </>

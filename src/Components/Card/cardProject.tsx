@@ -4,18 +4,29 @@ type CardProps = {
   siteLink: string;
   codeLink: string;
   projectTitle: string;
-  stackUsed:string;
+  stackUsed: string;
 };
-function Card({ thumbnailSrc, siteLink, codeLink, projectTitle, stackUsed }: CardProps) {
+function Card({
+  thumbnailSrc,
+  siteLink,
+  codeLink,
+  projectTitle,
+  stackUsed,
+}: CardProps) {
   return (
     <>
       <div className={styles.projectCard}>
-        <img
-          src={thumbnailSrc}
-          alt="card-project-thumbnail"
-          className={styles.thumbnail}
-        />
-        <p className={styles.projectCardTitle}>{projectTitle} <span className={styles.stacks}>{stackUsed}</span></p>
+        <a href={siteLink} target="_blank">
+          <img
+            src={thumbnailSrc}
+            alt="card-project-thumbnail"
+            className={styles.thumbnail}
+          />
+        </a>
+
+        <p className={styles.projectCardTitle}>
+          {projectTitle} <span className={styles.stacks}>{stackUsed}</span>
+        </p>
         <div className={styles.btnLinkContainer}>
           <a href={siteLink} target="_blank">
             <button className={styles.cardBtn}>View Live Site</button>

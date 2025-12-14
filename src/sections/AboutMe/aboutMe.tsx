@@ -17,7 +17,11 @@ function AboutMe() {
         I'm Subaga, a front-end developer with a designer's eye. I love crafting
         digital experiences that feel intuitive, beautiful, and meaningful.
       </p>
-      <a href="/src/assets/Docs/Subaga_Sreepathy_Resume_25.pdf" target="_blank">
+      <a
+        href="/src/assets/Docs/Subaga_Sreepathy_Resume_25.pdf"
+        target="_blank"
+        className={styles.resumeLink}
+      >
         <button className={styles.resumeBtn}>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
             <path

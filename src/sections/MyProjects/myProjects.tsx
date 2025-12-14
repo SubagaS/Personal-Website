@@ -44,6 +44,13 @@ function MyProjects() {
           projectTitle="FAQ Accordion"
           stackUsed="Typescript | React | CSS | Vite"
         />
+        <Card
+            thumbnailSrc="/src/assets/images/Sign-up-form-thumbnail.jpg"
+            siteLink="https://subagas.github.io/Frontend-mentor/Newbie/Sign-up-form-with-intro/"
+            codeLink="https://github.com/SubagaS/Sign-up-form-with-intro"
+            projectTitle="Sign Up Form"
+            stackUsed="HTML | CSS | Javascript"
+          />
       </div>
       <div className={styles.exploreBtn}>
         <button className={styles.moreProjectsBtn} onClick={handleSubmit}>

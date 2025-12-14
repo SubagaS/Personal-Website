@@ -1,21 +1,29 @@
+.projectCard {
+  max-width: 300px;
+}
 .thumbnail {
-  width: 100%;
+  max-width: clamp(295px, 10vw, 300px);
   height: 18rem;
+  display: block;
   object-fit: cover;
+  &:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+  }
 }
 .projectCardTitle {
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
-  font-size: 1rem;
+  font-size: clamp(1rem, 2vw, 1.2rem);
   font-weight: 500;
-  margin-top: 0.3rem;
+  margin-top: clamp(0.3rem, 2vw, 0.6rem);
   margin-bottom: 0.8rem;
-  
+
   .stacks {
     color: var(--green);
     opacity: 0.7;
-    font-size: 0.85rem;
+    font-size: clamp(0.85rem, 1vw, 0.9rem);
     z-index: 0;
   }
 }
@@ -28,7 +36,7 @@
     border: solid 1px var(--darkGrey);
     border-radius: 1.4rem;
     color: var(--lightGrey);
-    font-size: 0.875rem;
+    font-size: clamp(0.875rem,2vw,1rem);
     font-family: inherit;
     width: 7.8rem;
     height: 2rem;

@@ -12,22 +12,30 @@
 }
 .projectContainer {
   margin: 2rem 0 1rem 0;
+}
+.cardsContainer {
   display: grid;
-  grid-template-columns: auto;
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: clamp(1rem, 2vw, 2rem);
 }
-.moreProjects{
-  display:flex;
+.moreProjects {
+  display: flex;
   justify-content: center;
-  margin: 0.8rem 0;
+  margin: clamp(0.8rem, 5vw, 2rem) 0;
 }
-.moreProjectsBtn{
-  width: 10rem;
-  height: 2rem;
+.moreProjectsBtn {
+  width: clamp(10rem, 10vw, 14rem);
+  height: clamp(2rem, 3vw, 5rem);
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: clamp(0.9rem, 2vw, 1.25rem);
   background-color: #141414;
   border: 1px solid var(--darkGrey);
   border-radius: 0.5rem;
   color: var(--white);
+  &:hover {
+    cursor: pointer;
+    background-color: var(--black);
+    color: var(--green);
+    border: 1px solid var(--green);
+  }
 }
