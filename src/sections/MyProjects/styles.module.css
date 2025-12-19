@@ -4,29 +4,45 @@
   color: var(--lightGrey);
   font-size: clamp(1rem, 2vw, 1.2rem);
 }
-.aboutProject {
+.frontendProjectsAbout,
+.designProjectsAbout {
   margin-bottom: 1.5rem;
   font-size: clamp(1rem, 2vw, 1.4rem);
 }
+.frontendProjects,
+.designProjects {
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.frontendProjectsTitle,
+.designProjectsTitle {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: var(--lightGrey);
+}
 
 .cardContainer {
-  max-width: 100%;
-  display: grid;
-  gap: clamp(1.3rem, 5vw, 8rem);
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  justify-items: center;
-  justify-content: space-between;
-}
-.exploreBtn {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: clamp(1.5rem, 2vw, 2rem);
+  width: 95%;
   margin-bottom: 2rem;
+  display: grid;
+  column-gap: clamp(1rem, 2vw, 5rem);
+  row-gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  @media only screen and (min-width: 1440px) {
+    width: 80%;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+  @media only screen and (min-width: 2560px) {
+    width: 60%;
+  }
 }
+
 .moreProjectsBtn {
-  width: 13.375rem;
-  height: 3rem;
+  padding: 1rem;
   font-family: inherit;
   font-size: clamp(1rem, 2vw, 1.1rem);
   background-color: var(--black);

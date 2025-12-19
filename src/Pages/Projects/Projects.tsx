@@ -9,14 +9,26 @@ function Projects() {
     <>
       <Header />
       <main className={styles.mainProjectContainer}>
-        <h2 className={styles.projectIntro}>
-          Showcasing my <span>talent</span> and <span>passion</span>
-        </h2>
+        <h2 className={styles.projectIntro}>My Frontend Projects</h2>
         <HorizontalRule />
         <div className={styles.projectContainer}>
           <div className={styles.cardsContainer}>
             <Card
-              thumbnailSrc="/src/assets/images/Ticket-generator-thumbnail.jpg"
+              thumbnailSrc="/src/assets/images/github-user-search-thumbnail.jpg"
+              siteLink="https://subagas.github.io/Frontend-mentor/Junior/Github-user-search/"
+              codeLink="https://github.com/SubagaS/Github-user-search-app"
+              projectTitle="Github User Search"
+              stackUsed="Typescript | React | CSS | Vite"
+            />
+            <Card
+              thumbnailSrc="/src/assets/images/Advice-generator-thumbnail.jpg"
+              siteLink="https://subagas.github.io/Frontend-mentor/Junior/advice-generator-app/"
+              codeLink="https://github.com/SubagaS/Advice-generator-app"
+              projectTitle="Advice Generator App"
+              stackUsed="Typescript | React | CSS | Vite"
+            />
+            <Card
+              thumbnailSrc="/src/assets/images/Conference-ticket-generator-thumbnail.jpg"
               siteLink="https://subagas.github.io/Frontend-mentor/Junior/Conference-ticket-generator/"
               codeLink="https://github.com/SubagaS/Conference-ticket-generator"
               projectTitle="Conference Ticket Generator"

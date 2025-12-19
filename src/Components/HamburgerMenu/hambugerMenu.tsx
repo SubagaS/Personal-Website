@@ -34,8 +34,8 @@ function HamburgerMenu(): JSX.Element {
         >
           <div className={styles.menuAbtMe}>
             <img
-              src="/src/assets/images/frogiee.jpg"
-              alt="froggie-Img"
+              src="/src/assets/images/Professional-pic.jpg"
+              alt="Its-me"
               className={styles.profileImg}
             />
             <h3 className={styles.abtMeText}>

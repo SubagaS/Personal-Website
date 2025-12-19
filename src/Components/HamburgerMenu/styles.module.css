@@ -91,8 +91,8 @@
 }
 
 .profileImg {
-  width: clamp(7.25rem, 10vw, 10rem);
-  height: clamp(7.25rem, 10vw, 10rem);
+  width: clamp(10rem, 30vw, 20rem);
+  height: clamp(10rem, 30vw, 20rem);
   border-radius: 100%;
   object-fit: cover;
 }

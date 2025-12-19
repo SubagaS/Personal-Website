@@ -1,5 +1,6 @@
 import styles from './styles.module.css';
 import Card from '../../Components/Card/cardProject';
+import DesignCard from '../../Components/DesignCard/designCard';
 import HorizontalRule from '../../Components/HorizontalRule/horizontalRule';
 import { useNavigate } from 'react-router-dom';
 
@@ -8,57 +9,84 @@ function MyProjects() {
   function handleSubmit() {
     navigate('/Projects');
   }
+  function handleDesignSubmit() {
+    navigate('/Design');
+  }
   return (
-    <>
-      <h3 className={styles.projectTitle}>Projects</h3>
-      <p className={styles.aboutProject}>
-        I craft digital solutions that showcase my passion and expertise in
-        design and development.
+    <section>
+      <p className={styles.frontendProjectsTitle}>Frontend Projects</p>
+      <p className={styles.frontendProjectsAbout}>
+        My frontend projects are where design meets code. From interactive
+        components to responsive web apps, each project is built with a strong
+        focus on usability, performance, and attention to detail. I enjoy
+        transforming ideas and designs into clean, functional experiences that
+        feel intuitive, engaging, and polished across devices.
       </p>
-      <div className={styles.cardContainer}>
-        <Card
-          thumbnailSrc="/src/assets/images/Ticket-generator-thumbnail.jpg"
-          siteLink="https://subagas.github.io/Frontend-mentor/Junior/Conference-ticket-generator/"
-          codeLink="https://github.com/SubagaS/Conference-ticket-generator"
-          projectTitle="Conference Ticket Generator"
-          stackUsed="Typescript | React | CSS | Vite"
-        />
-        <Card
-          thumbnailSrc="/src/assets/images/Browser-extension-UI-thumbnail.jpg"
-          siteLink="https://subagas.github.io/Frontend-mentor/Junior/Browser-extension/"
-          codeLink="https://github.com/SubagaS/Browser-extension-manager-UI"
-          projectTitle="Browser Extension Manager UI"
-          stackUsed="Javascript | React | CSS | Vite"
-        />
-        <Card
-          thumbnailSrc="/src/assets/images/Interactive-rating-component.jpg"
-          siteLink="https://subagas.github.io/Frontend-mentor/Newbie/interactive-rating-component/"
-          codeLink="https://github.com/SubagaS/Interactive-rating-component"
-          projectTitle="Interactive Rating Component"
-          stackUsed="Typescript | React | CSS | Vite"
-        />
-        <Card
-          thumbnailSrc="/src/assets/images/FAQ-accordion-component.jpg"
-          siteLink="https://subagas.github.io/Frontend-mentor/Newbie/faq-accordion/"
-          codeLink="https://github.com/SubagaS/FAQ-accordion"
-          projectTitle="FAQ Accordion"
-          stackUsed="Typescript | React | CSS | Vite"
-        />
-        <Card
-            thumbnailSrc="/src/assets/images/Sign-up-form-thumbnail.jpg"
-            siteLink="https://subagas.github.io/Frontend-mentor/Newbie/Sign-up-form-with-intro/"
-            codeLink="https://github.com/SubagaS/Sign-up-form-with-intro"
-            projectTitle="Sign Up Form"
-            stackUsed="HTML | CSS | Javascript"
+      <div className={styles.frontendProjects}>
+        <div className={styles.cardContainer}>
+          <Card
+            thumbnailSrc="/src/assets/images/github-user-search-thumbnail.jpg"
+            siteLink="https://subagas.github.io/Frontend-mentor/Junior/Github-user-search/"
+            codeLink="https://github.com/SubagaS/Github-user-search-app"
+            projectTitle="Github User Search"
+            stackUsed="Typescript | React | CSS | Vite"
           />
-      </div>
-      <div className={styles.exploreBtn}>
+          <Card
+            thumbnailSrc="/src/assets/images/Advice-generator-thumbnail.jpg"
+            siteLink="https://subagas.github.io/Frontend-mentor/Junior/advice-generator-app/"
+            codeLink="https://github.com/SubagaS/Advice-generator-app"
+            projectTitle="Advice Generator App"
+            stackUsed="Typescript | React | CSS | Vite"
+          />
+          <Card
+            thumbnailSrc="/src/assets/images/Conference-ticket-generator-thumbnail.jpg"
+            siteLink="https://subagas.github.io/Frontend-mentor/Junior/Conference-ticket-generator/"
+            codeLink="https://github.com/SubagaS/Conference-ticket-generator"
+            projectTitle="Conference Ticket Generator"
+            stackUsed="Typescript | React | CSS | Vite"
+          />
+        </div>
         <button className={styles.moreProjectsBtn} onClick={handleSubmit}>
-          Explore more projects
+          Explore more frontend projects
         </button>
       </div>
+
       <HorizontalRule />
-    </>
+
+      <p className={styles.designProjectsTitle}>Design Projects</p>
+      <p className={styles.designProjectsAbout}>
+        As a designer, I turn my ideas into colors, layouts, and stories. I
+        experiment with form, mood and meaning to create designs that don't just
+        look good, but also stay memorable.
+      </p>
+      <div className={styles.designProjects}>
+        <div className={styles.cardContainer}>
+          <DesignCard
+            designImgSrc="/src/assets/images/we-learn-case-study.jpg"
+            designTitle="WeLearn - UX Case Study"
+            designSkills="Figma | Photoshop | Illustrator"
+            designLink="https://www.behance.net/gallery/170132755/WeLearn-UX-Case-Study"
+          />
+          <DesignCard
+            designImgSrc="/src/assets/images/weLearn-iOS.jpg"
+            designTitle="WeLearn - iOS Screen"
+            designSkills="Figma | Photoshop | Illustrator"
+            designLink="https://www.behance.net/gallery/170132475/WeLearn-iOS-Screens"
+          />
+          <DesignCard
+            designImgSrc="/src/assets/images/web-banner-thumbnail.jpg"
+            designTitle="Website Banner"
+            designSkills="Photoshop | Illustrator"
+            designLink="https://www.behance.net/gallery/237979203/Website-Banner"
+          />
+        </div>
+        <button className={styles.moreProjectsBtn} onClick={handleDesignSubmit}>
+          Explore more design projects
+        </button>
+      </div>
+
+      <HorizontalRule />
+    </section>
   );
 }
 export default MyProjects;

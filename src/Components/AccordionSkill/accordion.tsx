@@ -55,7 +55,7 @@ function AccordionSkill() {
     {
       title: 'Graphic Design',
       content:
-        'As a graphic designer I love turning ideas into visuals. Whether it is a brand identity or a social media campaign, I approach every design with curiosity and intention. For me, design is about emotion, balance, and the quiet details.',
+        'As a graphic designer, I love turning ideas into visuals. Whether it is a brand identity or a social media campaign, I approach every design with curiosity and intention. For me, design is about emotion, balance, and the quiet details.',
       skillIconSrc: [
         '/src/assets/images/Adobe_Photoshop_CC_icon.svg (1).png',
         '/src/assets/images/Adobe_Illustrator_CC_icon.svg (1).png',
@@ -64,7 +64,7 @@ function AccordionSkill() {
     {
       title: 'UI/UX Design',
       content:
-        'UI/UX design to me is to make a product feel human.My process begins with understanding the users story and ends with crafting intuitive, beautiful interfaces that make their journey effortless.',
+        'To me, UI/UX design is something that makes a product feel human. My process begins with understanding the users story and ends with crafting intuitive and beautiful interfaces.',
       skillIconSrc: ['/src/assets/images/Figma-logo.svg'],
     },
     {

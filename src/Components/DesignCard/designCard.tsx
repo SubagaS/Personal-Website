@@ -15,11 +15,14 @@ function DesignCard({
     <>
       <div className={styles.designCardContainer}>
         <div className={styles.designImgContainer}>
-          <img
-            src={designImgSrc}
-            alt="project-cover"
-            className={styles.designImg}
-          />
+          <a href={designLink} target="_blank">
+            <img
+              src={designImgSrc}
+              alt="project-cover"
+              className={styles.designImg}
+            />
+          </a>
+
           <div className={styles.designSkills}>
             <p>{designSkills}</p>
           </div>
@@ -28,9 +31,7 @@ function DesignCard({
           <p className={styles.designTitle}>{designTitle}</p>
 
           <a href={designLink} target="_blank" className={styles.designLink}>
-            <button className={styles.designProjectBtn}>
-              View project
-            </button>
+            <button className={styles.designProjectBtn}>View project</button>
           </a>
         </div>
       </div>
