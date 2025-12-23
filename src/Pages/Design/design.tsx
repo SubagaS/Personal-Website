@@ -11,12 +11,6 @@ function Design() {
       <main>
         <h4 className={styles.aboutDesign}>
           My Design Projects
-          {/* My design journey reflects a deepening interest in understanding the
-          intersection of user experience and visual aesthetics. Delving into
-          this field, I recognize the importance of empathy and usability in
-          creating designs that cater to user needs. Each project serves as a
-          step toward building a portfolio that not only showcases my skills but
-          also tells a story of growth and versatility. */}
         </h4>
         <HorizontalRule />
         <section className={styles.designCardContainer}>
