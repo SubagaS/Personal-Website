@@ -1,6 +1,8 @@
 import styles from './styles.module.css';
 import HorizontalRule from '../../Components/HorizontalRule/horizontalRule';
 import SocialLinks from '../../Components/SocialLinks/socialLinks';
+import resume from '/src/assets/Docs/Subaga_Sreepathy_Resume_26.pdf';
+
 function Footer() {
   return (
     <>
@@ -32,7 +34,7 @@ function Footer() {
               </button>
             </a>
             <a
-              href="/src/assets/Docs/Subaga_Sreepathy_Resume_26.pdf"
+              href={resume}
               target="_blank"
             >
               <button className={styles.contactLinkBtn}>

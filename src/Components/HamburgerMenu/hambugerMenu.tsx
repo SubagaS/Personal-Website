@@ -2,6 +2,7 @@ import { useState, useEffect, type JSX } from 'react';
 import styles from './styles.module.css';
 import SocialLinks from '../SocialLinks/socialLinks';
 import { Link } from 'react-router-dom';
+import profilePic from '/src/assets/images/Professional-pic.jpg';
 
 function HamburgerMenu(): JSX.Element {
   const [open, setOpen] = useState(false);
@@ -33,11 +34,7 @@ function HamburgerMenu(): JSX.Element {
           tabIndex={-1}
         >
           <div className={styles.menuAbtMe}>
-            <img
-              src="/src/assets/images/Professional-pic.jpg"
-              alt="Its-me"
-              className={styles.profileImg}
-            />
+            <img src={profilePic} alt="Its-me" className={styles.profileImg} />
             <h3 className={styles.abtMeText}>
               Hi. I am Subaga. I am a front end developer based in Berlin.
             </h3>

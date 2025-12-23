@@ -3,6 +3,11 @@ import Card from '../../Components/Card/cardProject';
 import DesignCard from '../../Components/DesignCard/designCard';
 import HorizontalRule from '../../Components/HorizontalRule/horizontalRule';
 import githubUserThumbnail from '/src/assets/images/github-user-search-thumbnail.jpg';
+import adviceThumbnail from '/src/assets/images/Advice-generator-thumbnail.jpg';
+import conferenceTicketThumbnail from '/src/assets/images/Conference-ticket-generator-thumbnail.jpg';
+import uxCaseStudy from '/src/assets/images/we-learn-case-study.jpg';
+import weLearnIos from '/src/assets/images/weLearn-iOS.jpg';
+import webBanner from '/src/assets/images/web-banner-thumbnail.jpg';
 import { useNavigate } from 'react-router-dom';
 
 function MyProjects() {
@@ -33,14 +38,14 @@ function MyProjects() {
             stackUsed="Typescript | React | CSS | Vite"
           />
           <Card
-            thumbnailSrc="/src/assets/images/Advice-generator-thumbnail.jpg"
+            thumbnailSrc={adviceThumbnail}
             siteLink="https://subagas.github.io/Frontend-mentor/Junior/advice-generator-app/"
             codeLink="https://github.com/SubagaS/Advice-generator-app"
             projectTitle="Advice Generator App"
             stackUsed="Typescript | React | CSS | Vite"
           />
           <Card
-            thumbnailSrc="/src/assets/images/Conference-ticket-generator-thumbnail.jpg"
+            thumbnailSrc={conferenceTicketThumbnail}
             siteLink="https://subagas.github.io/Frontend-mentor/Junior/Conference-ticket-generator/"
             codeLink="https://github.com/SubagaS/Conference-ticket-generator"
             projectTitle="Conference Ticket Generator"
@@ -63,19 +68,19 @@ function MyProjects() {
       <div className={styles.designProjects}>
         <div className={styles.cardContainer}>
           <DesignCard
-            designImgSrc="/src/assets/images/we-learn-case-study.jpg"
+            designImgSrc={uxCaseStudy}
             designTitle="WeLearn - UX Case Study"
             designSkills="Figma | Photoshop | Illustrator"
             designLink="https://www.behance.net/gallery/170132755/WeLearn-UX-Case-Study"
           />
           <DesignCard
-            designImgSrc="/src/assets/images/weLearn-iOS.jpg"
+            designImgSrc={weLearnIos}
             designTitle="WeLearn - iOS Screen"
             designSkills="Figma | Photoshop | Illustrator"
             designLink="https://www.behance.net/gallery/170132475/WeLearn-iOS-Screens"
           />
           <DesignCard
-            designImgSrc="/src/assets/images/web-banner-thumbnail.jpg"
+            designImgSrc={webBanner}
             designTitle="Website Banner"
             designSkills="Photoshop | Illustrator"
             designLink="https://www.behance.net/gallery/237979203/Website-Banner"

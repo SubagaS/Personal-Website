@@ -1,6 +1,7 @@
 import styles from './styles.module.css';
 import SocialLinks from '../../Components/SocialLinks/socialLinks';
 import HorizontalRule from '../../Components/HorizontalRule/horizontalRule';
+import resume from '/src/assets/Docs/Subaga_Sreepathy_Resume_26.pdf';
 
 function AboutMe() {
   return (
@@ -19,11 +20,7 @@ function AboutMe() {
           crafting digital experiences that feel intuitive, beautiful, and
           meaningful.
         </p>
-        <a
-          href="/src/assets/Docs/Subaga_Sreepathy_Resume_26.pdf"
-          target="_blank"
-          className={styles.resumeLink}
-        >
+        <a href={resume} target="_blank" className={styles.resumeLink}>
           <button className={styles.resumeBtn}>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
               <path

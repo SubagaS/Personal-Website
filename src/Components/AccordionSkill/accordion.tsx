@@ -1,6 +1,16 @@
 import { useState } from 'react';
 import styles from './styles.module.css';
 import HorizontalRule from '../HorizontalRule/horizontalRule';
+import psIcon from '/src/assets/images/Adobe_Photoshop_CC_icon.svg.png';
+import illustratorIcon from '/src/assets/images/Adobe_Illustrator_CC_icon.svg.png';
+import figmaIcon from '/src/assets/images/Figma-logo.svg';
+import htmlIcon from '/src/assets/images/HTML-icon.png';
+import cssIcon from '/src/assets/images/css-icon.png';
+import jsIcon from '/src/assets/images/JS-icon.png';
+import tsIcon from '/src/assets/images/Typescript_logo_2020.svg.png';
+import reactIcon from '/src/assets/images/React-icon.svg.png';
+import githubIcon from '/src/assets/images/github-icon.png';
+
 type AccordionProps = {
   title: string;
   content: string;
@@ -56,28 +66,25 @@ function AccordionSkill() {
       title: 'Graphic Design',
       content:
         'As a graphic designer, I love turning ideas into visuals. Whether it is a brand identity or a social media campaign, I approach every design with curiosity and intention. For me, design is about emotion, balance, and the quiet details.',
-      skillIconSrc: [
-        '/src/assets/images/Adobe_Photoshop_CC_icon.svg (1).png',
-        '/src/assets/images/Adobe_Illustrator_CC_icon.svg (1).png',
-      ],
+      skillIconSrc: [psIcon, illustratorIcon],
     },
     {
       title: 'UI/UX Design',
       content:
         'To me, UI/UX design is something that makes a product feel human. My process begins with understanding the users story and ends with crafting intuitive and beautiful interfaces.',
-      skillIconSrc: ['/src/assets/images/Figma-logo.svg'],
+      skillIconSrc: [figmaIcon],
     },
     {
       title: 'Frontend Developement',
       content:
         'As a frontend developer, I obsess over clean code and the small moments of delight that make a product feel alive. I see development as an extension of design-a creative craft that bridges logic and aesthetics to build digital experiences that are both meaningful and memorable.',
       skillIconSrc: [
-        '/src/assets/images/HTML-icon.png',
-        '/src/assets/images/css-icon.png',
-        '/src/assets/images/JS-icon.png',
-        '/src/assets/images/Typescript_logo_2020.svg.png',
-        '/src/assets/images/React-icon.svg.png',
-        '/src/assets/images/github-icon.png',
+        htmlIcon,
+        cssIcon,
+        jsIcon,
+        tsIcon,
+        reactIcon,
+        githubIcon,
       ],
     },
   ];
