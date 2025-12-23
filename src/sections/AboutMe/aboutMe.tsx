@@ -20,7 +20,7 @@ function AboutMe() {
           meaningful.
         </p>
         <a
-          href="/src/assets/Docs/Subaga_Sreepathy_Resume_25.pdf"
+          href="/src/assets/Docs/Subaga_Sreepathy_Resume_26.pdf"
           target="_blank"
           className={styles.resumeLink}
         >

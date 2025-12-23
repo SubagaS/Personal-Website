@@ -32,7 +32,7 @@ function Footer() {
               </button>
             </a>
             <a
-              href="/src/assets/Docs/Subaga_Sreepathy_Resume_25.pdf"
+              href="/src/assets/Docs/Subaga_Sreepathy_Resume_26.pdf"
               target="_blank"
             >
               <button className={styles.contactLinkBtn}>
