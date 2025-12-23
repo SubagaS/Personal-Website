@@ -2,6 +2,7 @@ import styles from './styles.module.css';
 import Card from '../../Components/Card/cardProject';
 import DesignCard from '../../Components/DesignCard/designCard';
 import HorizontalRule from '../../Components/HorizontalRule/horizontalRule';
+import githubUserThumbnail from '/src/assets/images/github-user-search-thumbnail.jpg';
 import { useNavigate } from 'react-router-dom';
 
 function MyProjects() {
@@ -25,7 +26,7 @@ function MyProjects() {
       <div className={styles.frontendProjects}>
         <div className={styles.cardContainer}>
           <Card
-            thumbnailSrc="/src/assets/images/github-user-search-thumbnail.jpg"
+            thumbnailSrc={githubUserThumbnail}
             siteLink="https://subagas.github.io/Frontend-mentor/Junior/Github-user-search/"
             codeLink="https://github.com/SubagaS/Github-user-search-app"
             projectTitle="Github User Search"
