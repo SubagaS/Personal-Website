@@ -4,6 +4,7 @@ import Projects from './Pages/Projects/Projects';
 import Design from './Pages/Design/design';
 import ScrollToTop from './Components/ScrollToTop/scrollToTop';
 import { Route, Routes } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/Projects" element={<Projects />} />
         <Route path="/Design" element={<Design />} />
       </Routes>
+      <Analytics />
     </>
   );
 }

@@ -16,8 +16,8 @@ function AboutMe() {
         </div>
 
         <p className={styles.aboutMePara}>
-          I'm Subaga, a front-end developer with a designer's eye. I love
-          crafting digital experiences that feel intuitive, beautiful, and
+          I'm Subaga, a frontend developer with a designer's eye. I love
+          crafting digital experiences that feel intuitive, beautiful and
           meaningful.
         </p>
         <a href={resume} target="_blank" className={styles.resumeLink}>

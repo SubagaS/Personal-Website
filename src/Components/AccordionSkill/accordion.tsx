@@ -13,7 +13,6 @@ import githubIcon from '/src/assets/images/github-icon.png';
 import minusIcon from '/src/assets/images/Minus-icon.png';
 import plusIcon from '/src/assets/images/Add-icon.png';
 
-
 type AccordionProps = {
   title: string;
   content: string;
@@ -36,10 +35,7 @@ function AccordionItem({ title, content, skillIconSrc }: AccordionProps) {
             {isOpen ? (
               <img src={minusIcon} className={styles.minusBtn} />
             ) : (
-              <img
-                src={plusIcon}
-                className={styles.addBtn}
-              />
+              <img src={plusIcon} className={styles.addBtn} />
             )}
           </button>
         </div>
@@ -75,7 +71,7 @@ function AccordionSkill() {
       skillIconSrc: [figmaIcon],
     },
     {
-      title: 'Frontend Developement',
+      title: 'Frontend Development',
       content:
         'As a frontend developer, I obsess over clean code and the small moments of delight that make a product feel alive. I see development as an extension of design-a creative craft that bridges logic and aesthetics to build digital experiences that are both meaningful and memorable.',
       skillIconSrc: [htmlIcon, cssIcon, jsIcon, tsIcon, reactIcon, githubIcon],

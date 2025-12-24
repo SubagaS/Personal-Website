@@ -36,7 +36,7 @@ function HamburgerMenu(): JSX.Element {
           <div className={styles.menuAbtMe}>
             <img src={profilePic} alt="Its-me" className={styles.profileImg} />
             <h3 className={styles.abtMeText}>
-              Hi. I am Subaga. I am a front end developer based in Berlin.
+              Hi. I am Subaga. I am a frontend developer based in Berlin.
             </h3>
             <SocialLinks width="2.3rem" height="2.3rem" />
           </div>
