@@ -10,6 +10,9 @@ import jsIcon from '/src/assets/images/JS-icon.png';
 import tsIcon from '/src/assets/images/Typescript_logo_2020.svg.png';
 import reactIcon from '/src/assets/images/React-icon.svg.png';
 import githubIcon from '/src/assets/images/github-icon.png';
+import minusIcon from '/src/assets/images/Minus-icon.png';
+import plusIcon from '/src/assets/images/Add-icon.png';
+
 
 type AccordionProps = {
   title: string;
@@ -31,13 +34,10 @@ function AccordionItem({ title, content, skillIconSrc }: AccordionProps) {
             className={styles.accOpenBtn}
           >
             {isOpen ? (
-              <img
-                src="/src/assets/images/Minus-icon.png"
-                className={styles.minusBtn}
-              />
+              <img src={minusIcon} className={styles.minusBtn} />
             ) : (
               <img
-                src="/src/assets/images/Add-icon.png"
+                src={plusIcon}
                 className={styles.addBtn}
               />
             )}
@@ -78,14 +78,7 @@ function AccordionSkill() {
       title: 'Frontend Developement',
       content:
         'As a frontend developer, I obsess over clean code and the small moments of delight that make a product feel alive. I see development as an extension of design-a creative craft that bridges logic and aesthetics to build digital experiences that are both meaningful and memorable.',
-      skillIconSrc: [
-        htmlIcon,
-        cssIcon,
-        jsIcon,
-        tsIcon,
-        reactIcon,
-        githubIcon,
-      ],
+      skillIconSrc: [htmlIcon, cssIcon, jsIcon, tsIcon, reactIcon, githubIcon],
     },
   ];
   return (
