@@ -51,7 +51,7 @@ function Footer() {
         </div>
         <HorizontalRule />
         <div className={styles.linksFooter}>
-          <p>&copy; 2025 all rights reserved</p>
+          <p>&copy; 2026 all rights reserved</p>
           <SocialLinks width="1.7rem" height="1.7rem" />
         </div>
       </footer>
