@@ -11,6 +11,7 @@ import signUpThumbnail from '/src/assets/images/Sign-up-form-thumbnail.jpg';
 import interactiveRatingThumbnail from '/src/assets/images/Interactive-rating-component.jpg';
 import faqThumbnail from '/src/assets/images/FAQ-accordion-component.jpg';
 import recipeThumbnail from '/src/assets/images/Recipe-page-thumbnail.jpg';
+import productCartThumbnail from '/src/assets/images/Product-list-with-cart-thumbnail.jpg';
 
 function Projects() {
   return (
@@ -21,6 +22,13 @@ function Projects() {
         <HorizontalRule />
         <div className={styles.projectContainer}>
           <div className={styles.cardsContainer}>
+            <Card
+              thumbnailSrc={productCartThumbnail}
+              siteLink="https://subagas.github.io/Frontend-mentor/Junior/Product-list-with-cart/"
+              codeLink="https://github.com/SubagaS/Productlist-with-cart"
+              projectTitle="Product list with cart"
+              stackUsed="JavaScript | React | CSS | Vite"
+            />
             <Card
               thumbnailSrc={githubUserThumbnail}
               siteLink="https://subagas.github.io/Frontend-mentor/Junior/Github-user-search/"

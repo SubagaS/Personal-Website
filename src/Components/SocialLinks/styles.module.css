@@ -4,7 +4,6 @@
   align-items: center;
   button {
     background-color: transparent;
-    /* border: solid 1px #dedede; */
     border: none;
     border-radius: 50%;
     width: clamp(2.5rem, 2vw, 5rem);
@@ -13,7 +12,7 @@
     align-items: center;
     justify-content: center;
     &:hover {
-      /* border: solid 1px #a7c957; */
+    
       cursor: pointer;
     }
   }

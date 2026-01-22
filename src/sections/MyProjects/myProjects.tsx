@@ -3,7 +3,7 @@ import Card from '../../Components/Card/cardProject';
 import DesignCard from '../../Components/DesignCard/designCard';
 import HorizontalRule from '../../Components/HorizontalRule/horizontalRule';
 import githubUserThumbnail from '/src/assets/images/github-user-search-thumbnail.jpg';
-import adviceThumbnail from '/src/assets/images/Advice-generator-thumbnail.jpg';
+import productCartThumbnail from '/src/assets/images/Product-list-with-cart-thumbnail.jpg';
 import conferenceTicketThumbnail from '/src/assets/images/Conference-ticket-generator-thumbnail.jpg';
 import uxCaseStudy from '/src/assets/images/we-learn-case-study.jpg';
 import weLearnIos from '/src/assets/images/weLearn-iOS.jpg';
@@ -31,17 +31,17 @@ function MyProjects() {
       <div className={styles.frontendProjects}>
         <div className={styles.cardContainer}>
           <Card
+            thumbnailSrc={productCartThumbnail}
+            siteLink="https://subagas.github.io/Frontend-mentor/Junior/Product-list-with-cart/"
+            codeLink="https://github.com/SubagaS/Productlist-with-cart"
+            projectTitle="Product list with cart"
+            stackUsed="JavaScript | React | CSS | Vite"
+          />
+          <Card
             thumbnailSrc={githubUserThumbnail}
             siteLink="https://subagas.github.io/Frontend-mentor/Junior/Github-user-search/"
             codeLink="https://github.com/SubagaS/Github-user-search-app"
             projectTitle="Github User Search"
-            stackUsed="Typescript | React | CSS | Vite"
-          />
-          <Card
-            thumbnailSrc={adviceThumbnail}
-            siteLink="https://subagas.github.io/Frontend-mentor/Junior/advice-generator-app/"
-            codeLink="https://github.com/SubagaS/Advice-generator-app"
-            projectTitle="Advice Generator App"
             stackUsed="Typescript | React | CSS | Vite"
           />
           <Card
